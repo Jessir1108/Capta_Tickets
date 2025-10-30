@@ -5,18 +5,19 @@ import os
 
 def get_mongo_uri():
     """
-    Obtiene el MONGO_URI de forma segura:
-    1. Primero intenta leer de Streamlit Secrets (producción)
-    2. Luego intenta leer de variables de entorno
-    3. Finalmente usa localhost (desarrollo local)
+    Prioridad:
+    1. Streamlit Secrets (producción en Streamlit Cloud)
+    2. Variables de entorno
+    3. Localhost (desarrollo local)
     """
     if hasattr(st, "secrets") and "MONGO_URI" in st.secrets:
         return st.secrets["MONGO_URI"]
+
     elif "MONGO_URI" in os.environ:
         return os.environ["MONGO_URI"]
+
     else:
         return "mongodb://admin:captaPassword123@localhost:27017/"
-
 
 MONGO_URI = get_mongo_uri()
 DB_NAME = "capta_tickets"
