@@ -1,8 +1,8 @@
 from pymongo import MongoClient
 from datetime import datetime
 
-SOURCE_URI = "mongodb://admin:captaPassword123@localhost:27017/"
-TARGET_URI = "mongodb+srv://JFlorez:Jessir1001@capta.x41ltzq.mongodb.net/?appName=Capta"
+SOURCE_URI = "SOURCE"
+TARGET_URI = "TARGET"
 
 print("=" * 70)
 print("🚀 MIGRACIÓN DE DATOS: Docker Local → MongoDB Atlas")
