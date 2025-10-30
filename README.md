@@ -166,7 +166,3 @@ Haz click en "🔍 Aplicar Filtros" después de seleccionarlos
 
 **¿Cómo agrego más datos?**  
 Ejecuta `python scripts/generate_data.py`
-
----
-
-⭐ **Si este proyecto te fue útil, dale una estrella en GitHub**
