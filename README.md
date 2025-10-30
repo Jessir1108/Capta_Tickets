@@ -61,33 +61,6 @@ MONGO_URI = "mongodb+srv://user:password@cluster.mongodb.net/"
 export MONGO_URI="mongodb+srv://user:password@cluster.mongodb.net/"
 ```
 
-### Estructura del Proyecto
-
-Capta_Tickets/
-├── Docker-Compose.yml
-├── indexes.js
-├── queries.js
-│
-├── streamlit/
-│   ├── app.py
-│   ├── config.py
-│   ├── database.py
-│   ├── queries.py
-│   ├── filters.py
-│   ├── ui/
-│   │   ├── __init__.py
-│   │   ├── metrics.py
-│   │   ├── charts.py
-│   │   └── tables.py
-│   └── __pycache__/
-│
-├── Scripts/
-│   ├── capta_tickets.py
-│   └── update_tickets.py
-│
-└── Mongo/
-    └── migrate_atlas.py
-
 ## 💾 Modelo de Datos
 
 ### Colección: `tickets`
