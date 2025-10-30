@@ -119,12 +119,12 @@ MONGO_URI = "mongodb+srv://user:password@cluster.mongodb.net/"
 
 4. **Deploy** 🚀
 
-URL: `https://tu-usuario-capta-dashboard.streamlit.app`
+URL: `https://captatickets.streamlit.app`
 
 ## 🛠️ Tecnologías
 
-- **Backend**: Python 3.8+, Streamlit 1.31.0, PyMongo 4.6.1
-- **Visualización**: Plotly 5.18.0, Pandas 2.1.4
+- **Backend**: Python 3.8+, Streamlit 1.50.0, PyMongo 4.15.3
+- **Visualización**: Plotly 6.3.1, Pandas 2.3.3
 - **Base de Datos**: MongoDB 7.0+ (Atlas)
 - **Deploy**: Streamlit Cloud
 
@@ -136,12 +136,6 @@ python scripts/generate_data.py
 
 # Actualizar campos desnormalizados
 python scripts/update_tickets.py
-
-# Crear índices en MongoDB
-docker exec -it capta-mongodb mongosh -u admin -p pass --file scripts/indexes.js
-
-# Ejecutar consultas de prueba
-docker exec -it capta-mongodb mongosh -u admin -p pass --file scripts/queries.js
 ```
 
 ## 📖 Uso
