@@ -154,7 +154,7 @@ docker exec -it capta-mongodb mongosh -u admin -p pass --file scripts/queries.js
 ## 👤 Autor
 
 **Jessir Florez**
-- LinkedIn: [Tu Perfil](https://www.linkedin.com/in/jessflorez)
+- LinkedIn: [Jessir Daniel Florez Hamburger](https://www.linkedin.com/in/jessflorez)
 
 ## ❓ FAQ
 
